@@ -1,0 +1,26 @@
+{
+  "name": "booty-busters",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "bootstrap": "bash scripts/bootstrap.sh",
+    "deploy-functions": "cd services/functions && firebase deploy --only functions",
+    "deploy-hosting": "cd apps/client-web && firebase deploy --only hosting"
+  },
+  "description": "Therapeutic prostate massage management system",
+  "keywords": [
+    "massage",
+    "prostate",
+    "wellness",
+    "client-management",
+    "stripe",
+    "firebase"
+  ],
+  "author": "Executive Solutions LLC",
+  "license": "MIT"
+}
